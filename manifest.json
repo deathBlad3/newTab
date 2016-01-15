@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "newTab",
+	"description": "Opens all links in a new tab",
+	"version": "1.0",
+	"permissions": [
+	"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["jquery.min.js","content.js"]
+		}
+	]
+}
